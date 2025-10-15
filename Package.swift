@@ -13,9 +13,7 @@ let package = Package(
             targets: ["ReverseExtension"]
         ),
     ],
-    dependencies: [
-        .package(url: "https://github.com/IDN-Media/ios.ReverseExtension.git", from: "1.0.0")
-    ], 
+    dependencies: [], 
     targets: [
         // Your main library target
         .target(
