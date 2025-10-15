@@ -20,9 +20,11 @@ let package = Package(
             name: "ReverseExtension",
             dependencies: [],
             path: "ReverseExtension",
-            publicHeadersPath: ".", // 👈 enables Obj-C headers
-            cSettings: [
-                .headerSearchPath(".") // 👈 allows .h files in root of target folder
+            exclude: [    // 👇 ignore Obj-C files
+                "DelegateProxyBase.h",
+                "DelegateProxyBase.m",
+                "DenyDelegateMethod.h",
+                "DenyDelegateMethod.m"
             ]
         ),
     ]
