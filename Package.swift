@@ -19,7 +19,11 @@ let package = Package(
         .target(
             name: "ReverseExtension",
             dependencies: [],
-            path: "ReverseExtension"
+            path: "ReverseExtension",
+            publicHeadersPath: ".", // 👈 enables Obj-C headers
+            cSettings: [
+                .headerSearchPath(".") // 👈 allows .h files in root of target folder
+            ]
         ),
     ]
 )
