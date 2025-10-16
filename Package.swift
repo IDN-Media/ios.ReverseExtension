@@ -17,13 +17,7 @@ let package = Package(
         .target(
             name: "ReverseExtension",
             dependencies: [],
-            path: "ReverseExtension",
-            exclude: [
-                "DelegateProxyBase.h",
-                "DelegateProxyBase.m",
-                "DenyDelegateMethod.h",
-                "DenyDelegateMethod.m"
-            ]
+            path: "ReverseExtension"
         )
     ]
 )
