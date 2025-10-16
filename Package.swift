@@ -17,13 +17,13 @@ let package = Package(
         // Objective-C part
         .target(
             name: "ReverseExtension-C",
+            path: "Sources/ReverseExtension-C",
             publicHeadersPath: "include"
         ),
         // Swift part that depends on Objective-C target
         .target(
             name: "ReverseExtension",
-            dependencies: ["ReverseExtension-C"],
-            path: "ReverseExtension"
+            dependencies: ["ReverseExtension-C"]
         )
     ]
 )
