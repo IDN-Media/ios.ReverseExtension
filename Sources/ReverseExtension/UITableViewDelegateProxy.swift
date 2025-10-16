@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ReverseExtension_C
 
 final class UITableViewDelegateProxy: DelegateProxyBase, UITableViewDelegate {
     convenience init(
